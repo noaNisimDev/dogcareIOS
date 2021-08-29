@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="login_screen" id="BYZ-38-t0r" customClass="ViewController" customModule="DogCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="img_backgroundpaws" translatesAutoresizingMaskIntoConstraints="NO" id="PwK-SC-AC3">
+                                <rect key="frame" x="0.0" y="0.0" width="744" height="1111"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRf-6n-b23">
+                                <rect key="frame" x="132" y="696" width="151" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="70"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="whe-3O-P1q"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="img_main_titlebackground" translatesAutoresizingMaskIntoConstraints="NO" id="fxB-TA-ZX1">
+                                <rect key="frame" x="0.0" y="37" width="414" height="353"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PwK-SC-AC3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Csx-zS-0tb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fxB-TA-ZX1" secondAttribute="bottom" constant="455" id="b4I-F8-Azj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fxB-TA-ZX1" secondAttribute="trailing" id="ena-yC-4HS"/>
+                            <constraint firstItem="PwK-SC-AC3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rLK-V0-2a0"/>
+                            <constraint firstItem="PwK-SC-AC3" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="sMs-mh-n7X"/>
+                            <constraint firstItem="PwK-SC-AC3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="utg-Mf-cjY"/>
+                            <constraint firstItem="fxB-TA-ZX1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="wea-HB-abd"/>
+                            <constraint firstItem="fxB-TA-ZX1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zgV-96-pvo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+        <!--My Tab Bar Controller-->
+        <scene sceneID="wHU-er-M0m">
+            <objects>
+                <tabBarController storyboardIdentifier="main_screen" id="vmX-8y-TWd" customClass="MyTabBarController" customModule="DogCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="PXU-Uq-OiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WpO-dz-fdM" kind="relationship" relationship="viewControllers" id="grK-oh-d3v"/>
+                        <segue destination="U1K-OR-ybw" kind="relationship" relationship="viewControllers" id="dzF-Dw-cem"/>
+                        <segue destination="FbV-6N-ujT" kind="relationship" relationship="viewControllers" id="HXL-pP-Xne"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJI-Tx-gdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="110"/>
+        </scene>
+        <!--DogCare-->
+        <scene sceneID="haq-xL-bOt">
+            <objects>
+                <navigationController modalTransitionStyle="partialCurl" id="U1K-OR-ybw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="DogCare" id="0Ux-3l-t4f"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jfi-PI-0np">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LJI-PT-Jon" kind="relationship" relationship="rootViewController" id="kfe-7P-8dK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDa-91-O3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213" y="858"/>
+        </scene>
+        <!--Add Dog-->
+        <scene sceneID="OZ9-9q-8v4">
+            <objects>
+                <navigationController id="FbV-6N-ujT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Add Dog" id="Iip-mS-hi1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fJA-XJ-TAR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bKM-XV-zxt" kind="relationship" relationship="rootViewController" id="5qb-EG-C5S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apH-0T-MpN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="858"/>
+        </scene>
+        <!--Delete Dog-->
+        <scene sceneID="pcc-3V-BVO">
+            <objects>
+                <navigationController id="WpO-dz-fdM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Delete Dog" id="In3-B7-F0j"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2rM-fr-DNx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kuj-5w-sAn" kind="relationship" relationship="rootViewController" id="WWH-Tz-xjH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pD8-G9-qom" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275" y="858"/>
+        </scene>
+        <!--Delete Dog-->
+        <scene sceneID="2io-3i-zY2">
+            <objects>
+                <viewController id="Kuj-5w-sAn" customClass="DeleteDogViewController" customModule="DogCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="71g-uW-e0F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_backgroundpaws" translatesAutoresizingMaskIntoConstraints="NO" id="WlL-QQ-mSP">
+                                <rect key="frame" x="-26" y="0.0" width="744" height="1111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rgf-Ws-tY7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="625"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="VyZ-aM-4sd">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VyZ-aM-4sd" id="xhq-yj-Cjk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lS3-Zm-8jd">
+                                <rect key="frame" x="123" y="723" width="169" height="80"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="62"/>
+                                <state key="normal" title="DELETE">
+                                    <color key="titleColor" systemColor="systemGray6Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapDelete" destination="Kuj-5w-sAn" eventType="touchUpInside" id="WYT-t9-3YL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S1I-gj-1nd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lS3-Zm-8jd" firstAttribute="top" secondItem="Rgf-Ws-tY7" secondAttribute="bottom" constant="10" id="4Zw-h5-gHN"/>
+                            <constraint firstItem="Rgf-Ws-tY7" firstAttribute="top" secondItem="S1I-gj-1nd" secondAttribute="top" id="Mp4-dO-QXE"/>
+                            <constraint firstItem="S1I-gj-1nd" firstAttribute="bottom" secondItem="Rgf-Ws-tY7" secondAttribute="bottom" constant="100" id="QwY-aU-4bX"/>
+                            <constraint firstItem="lS3-Zm-8jd" firstAttribute="leading" secondItem="S1I-gj-1nd" secondAttribute="leading" constant="123" id="U4F-Qk-0ks"/>
+                            <constraint firstItem="Rgf-Ws-tY7" firstAttribute="leading" secondItem="S1I-gj-1nd" secondAttribute="leading" id="VX1-uZ-Ei5"/>
+                            <constraint firstItem="S1I-gj-1nd" firstAttribute="trailing" secondItem="lS3-Zm-8jd" secondAttribute="trailing" constant="122" id="tXw-ep-cgQ"/>
+                            <constraint firstItem="S1I-gj-1nd" firstAttribute="trailing" secondItem="Rgf-Ws-tY7" secondAttribute="trailing" id="yNb-9k-TN7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Delete Dog" id="2nx-P7-ZXg"/>
+                    <connections>
+                        <outlet property="deleteBtn" destination="lS3-Zm-8jd" id="oFr-Kt-nr9"/>
+                        <outlet property="table" destination="Rgf-Ws-tY7" id="eI5-KF-QUi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxr-4s-wPA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="1548"/>
+        </scene>
+        <!--DogCare-->
+        <scene sceneID="2TX-yC-XpC">
+            <objects>
+                <viewController id="LJI-PT-Jon" customClass="DogCareViewController" customModule="DogCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bcc-Zt-1yS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_backgroundpaws" translatesAutoresizingMaskIntoConstraints="NO" id="ira-oC-nrT">
+                                <rect key="frame" x="-66" y="-65" width="744" height="1111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhR-7N-IdW">
+                                <rect key="frame" x="-69" y="-55" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a dog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ukf-IS-j9S">
+                                <rect key="frame" x="0.0" y="238" width="414" height="41"/>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="35"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                            </label>
+                            <switch opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vbq-79-pgw">
+                                <rect key="frame" x="58" y="408" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" systemColor="systemIndigoColor"/>
+                                <connections>
+                                    <action selector="morningTripChange:" destination="LJI-PT-Jon" eventType="valueChanged" id="x8B-Fl-aB1"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DhC-Wc-9f5">
+                                <rect key="frame" x="58" y="527" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" systemColor="systemIndigoColor"/>
+                                <connections>
+                                    <action selector="noonTripChange:" destination="LJI-PT-Jon" eventType="valueChanged" id="lE3-tD-kuj"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d6h-7U-9Lr">
+                                <rect key="frame" x="58" y="661" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" systemColor="systemIndigoColor"/>
+                                <connections>
+                                    <action selector="nightTripChange:" destination="LJI-PT-Jon" eventType="valueChanged" id="yZo-kr-k5w"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J78-Fy-uFZ">
+                                <rect key="frame" x="309" y="408" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" systemColor="systemIndigoColor"/>
+                                <connections>
+                                    <action selector="morningFeegChange:" destination="LJI-PT-Jon" eventType="valueChanged" id="ED2-Lb-e9A"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dlu-1B-faY">
+                                <rect key="frame" x="309" y="527" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" systemColor="systemIndigoColor"/>
+                                <connections>
+                                    <action selector="noonFeedChange:" destination="LJI-PT-Jon" eventType="valueChanged" id="s3e-g4-1AB"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pgd-4d-KGa">
+                                <rect key="frame" x="309" y="661" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" systemColor="systemIndigoColor"/>
+                                <connections>
+                                    <action selector="nightFeedChange:" destination="LJI-PT-Jon" eventType="valueChanged" id="8ez-YW-5Lf"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDQ-au-qHV">
+                                <rect key="frame" x="44" y="327" width="74" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feeds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sji-Ic-bG1">
+                                <rect key="frame" x="295" y="327" width="94" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Morning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkq-Yz-XdM">
+                                <rect key="frame" x="159" y="406" width="97" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Noon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9U-Ol-iWY">
+                                <rect key="frame" x="175" y="526" width="64" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Night" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqS-ap-NeL">
+                                <rect key="frame" x="176" y="659" width="64" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJ9-BU-noi">
+                                <rect key="frame" x="162" y="727" width="92" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="45"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSaveButton" destination="LJI-PT-Jon" eventType="touchUpInside" id="cDB-V5-ac5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lQc-8J-mKR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lQc-8J-mKR" firstAttribute="bottom" secondItem="Ukf-IS-j9S" secondAttribute="bottom" constant="534" id="5FY-4a-hhI"/>
+                            <constraint firstItem="Ukf-IS-j9S" firstAttribute="top" secondItem="lQc-8J-mKR" secondAttribute="top" constant="150" id="DJe-1D-AtI"/>
+                            <constraint firstItem="Ukf-IS-j9S" firstAttribute="leading" secondItem="lQc-8J-mKR" secondAttribute="leading" id="hFS-KE-hXb"/>
+                            <constraint firstItem="lQc-8J-mKR" firstAttribute="trailing" secondItem="Ukf-IS-j9S" secondAttribute="trailing" id="xOb-CA-Qwd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DogCare" largeTitleDisplayMode="always" id="Glm-Ub-zI1"/>
+                    <connections>
+                        <outlet property="morningFeed" destination="J78-Fy-uFZ" id="9Fs-8D-UCP"/>
+                        <outlet property="morningTrip" destination="Vbq-79-pgw" id="UJD-oJ-njq"/>
+                        <outlet property="nameLbl" destination="Ukf-IS-j9S" id="4cT-f6-YtS"/>
+                        <outlet property="nightFeed" destination="pgd-4d-KGa" id="hj9-LQ-vnO"/>
+                        <outlet property="nightTrip" destination="d6h-7U-9Lr" id="Dkv-ti-X4h"/>
+                        <outlet property="noonFeed" destination="dlu-1B-faY" id="1bX-A3-AHx"/>
+                        <outlet property="noonTrip" destination="DhC-Wc-9f5" id="ApJ-6L-IpH"/>
+                        <outlet property="saveBtn" destination="SJ9-BU-noi" id="Kka-Zg-d6J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6Y-Vm-JRt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226" y="1548"/>
+        </scene>
+        <!--Add Dog-->
+        <scene sceneID="KUr-Bz-rsG">
+            <objects>
+                <viewController id="bKM-XV-zxt" customClass="AddDogViewController" customModule="DogCare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AYI-HC-Wee">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_backgroundpaws" translatesAutoresizingMaskIntoConstraints="NO" id="r4f-BA-1CR">
+                                <rect key="frame" x="-165" y="-108" width="744" height="1111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOW-72-fiz">
+                                <rect key="frame" x="46" y="182" width="90" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="me2-b9-AZv">
+                                <rect key="frame" x="46" y="297" width="77" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feeds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sC-Qa-fHl">
+                                <rect key="frame" x="46" y="414" width="87" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2d-bG-Qpf">
+                                <rect key="frame" x="151" y="192" width="233" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fLr-XN-kuq">
+                                <rect key="frame" x="159" y="304" width="217" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <segments>
+                                    <segment title="One"/>
+                                    <segment title="Two"/>
+                                    <segment title="Three"/>
+                                </segments>
+                                <connections>
+                                    <action selector="tripsChanged:" destination="bKM-XV-zxt" eventType="valueChanged" id="xhb-et-mLA"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8cT-Cq-oKg">
+                                <rect key="frame" x="159" y="421" width="217" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <segments>
+                                    <segment title="One"/>
+                                    <segment title="Two"/>
+                                    <segment title="Three"/>
+                                </segments>
+                                <connections>
+                                    <action selector="feedsChanged:" destination="bKM-XV-zxt" eventType="valueChanged" id="aHK-G9-M4i"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpH-Gq-Ukg">
+                                <rect key="frame" x="151" y="595" width="95" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="33"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSaveButton" destination="bKM-XV-zxt" eventType="touchUpInside" id="Okx-xy-jWf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0pa-S6-IOY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Dog" id="BYu-Ca-VDf"/>
+                    <connections>
+                        <outlet property="feeds" destination="8cT-Cq-oKg" id="4su-z7-RJh"/>
+                        <outlet property="saveBtn" destination="lpH-Gq-Ukg" id="Nof-Ny-2zc"/>
+                        <outlet property="textFieldName" destination="m2d-bG-Qpf" id="Tvk-zg-FIa"/>
+                        <outlet property="trips" destination="fLr-XN-kuq" id="c6q-fb-8Rm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYb-f8-zjz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="1548"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_backgroundpaws" width="706" height="483"/>
+        <image name="img_main_titlebackground" width="1144" height="500"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
